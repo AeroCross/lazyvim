@@ -5,3 +5,6 @@
 -- Disable scrolling animations
 vim.g.snacks_animate_scroll = false
 vim.g.snacks_animate = false
+
+-- No relative numbers
+vim.opt.relativenumber = false
