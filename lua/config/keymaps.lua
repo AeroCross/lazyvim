@@ -13,17 +13,14 @@ vim.keymap.set("v", "p", '"_dP')
 vim.keymap.set("n", "<leader>h", "*N", { desc = "[H]ighlight under cursor" })
 
 -- "Find next" centres the viewport
-vim.keymap.set("n", "n", "nzz")
+vim.keymap.set("n", "n", "nzz", { desc = "Find next" })
 
 -- "Find previous" centres the viewport
-vim.keymap.set("n", "N", "Nzz")
+vim.keymap.set("n", "N", "Nzz", { desc = "Find Previous" })
 
 -- Move to the beginning and end of line naturally
 vim.keymap.set("n", "L", "$")
 vim.keymap.set("n", "H", "^")
-
--- Save quickly
-vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "[W]rite to File" })
 
 -- Paste below
 vim.keymap.set("n", "p", ":pu<CR>")
